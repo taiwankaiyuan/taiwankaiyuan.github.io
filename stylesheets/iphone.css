@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.iphone {
+    border: 5px solid #757575;
+    width: 267px;
+    height: 542px;
+    margin: 20px 50px;
+    /*    background-image: url(/images/iphone.png);*/
+    background-repeat: no-repeat;
+    background-size: 700px;
+    background-position: -233px -86px;
+    border-radius: 36px;
+}
+
+.camrea {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #424242;
+    top: 56px;
+    left: 144px;
+}
+
+.blackpoint {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #424242;
+    top: 43px;
+    left: 181px;
+}
+
+.speaker {
+    position: absolute;
+    width: 41px;
+    height: 4px;
+    border-radius: 2px;
+    background: #424242;
+    top: 60px;
+    left: 164px;
+}
+
+.home {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: 2px outset #bababa;
+    top: 507px;
+    left: 164px;
+}
+
+.screen {
+    position: absolute;
+    width: 231px;
+    height: 412px;
+    border: 1px inset #9b9b9b;
+    top: 81px;
+    left: 68px;
+}
+
+.top-button {
+    position: absolute;
+    width: 39px;
+    height: 5px;
+    border-radius: 2px;
+    border: 1px solid #757575;
+    top: 18px;
+    left: 240px; 
+}
+
+.right-button1 {
+    position: absolute;
+    width: 6px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid #757575;
+    top: 140px;
+    left: 47px;
+}
+
+.right-button2 {
+    position: absolute;
+    width: 6px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid #757575;
+    top: 190px;
+    left: 47px;
+}
+
+iframe {
+    width: 229px;
+    height: 410px;
+}
+
+.tophead {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.tophead ul{
+    margin: 0;
+    list-style-type: none;
+}
+
+.tophead li{
+    background: #b2b2b2;
+    color: #000;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 1px;
+    text-align: center;
+    width: 60px;
+    float: right;
+}
+
+.tophead li:hover {
+    background: white;
+}
+
+.tophead a {
+    text-decoration: none;
+}
+
+.tophead a:hover {
+    text-decoration: underline;
+}
