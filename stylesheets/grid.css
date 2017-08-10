@@ -285,7 +285,7 @@ ul.menu a:hover {
 
 
 .head-img {
-    background-image: url(https://unsplash.it/g/2000/1000);
+    background-image: url(/images/head.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
