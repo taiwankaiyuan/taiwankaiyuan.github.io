@@ -41,11 +41,8 @@ body {
         height: 71px;
     }
     .text {
-    padding: 20px 50px;
-    color: #232323;
-    font-size: 16px;
-    border-bottom: 0.5px dashed #afafaf;
-    } 
+    padding: 20px 20px;
+    }
     .col-xs-1 {
         width: calc(100% * 1 / 12);
     }
@@ -92,10 +89,7 @@ body {
     height: 36px;
     }
     .text {
-    padding: 20px 50px;
-    color: #232323;
-    font-size: 16px;
-    border-right: 0.5px dashed #afafaf;
+        padding: 20px 50px;
     }
     .col-sm-1 {
         width: calc(100% * 1 / 12);
@@ -143,10 +137,7 @@ body {
     height: 36px;
     }
     .text {
-    padding: 20px 100px;
-    color: #232323;
-    font-size: 16px;
-    border-right: 0.5px dashed #afafaf;
+        padding: 20px 100px;
     }
     .col-md-1 {
         width: calc(100% * 1 / 12);
@@ -190,14 +181,12 @@ body {
     .container {
         width: 1170px;
     }
+
     .tophead {
         height: 36px;
     }
     .text {
-    padding: 20px 100px;
-    color: #232323;
-    font-size: 16px;
-    border-right: 0.5px dashed #afafaf;
+        padding: 20px 100px;
     }
     .col-lg-1 {
         width: calc(100% * 1 / 12);
@@ -236,8 +225,8 @@ body {
         width: calc(100% * 12 / 12);
     }
 }
- 
-    .tophead {
+
+.tophead {
     position: fixed;
     width: 100%;
     background-color: white;
@@ -245,9 +234,15 @@ body {
 }
 
 .tophead ul { /* 取消ul預設內縮及樣式 */
-margin: 0;
-padding: 0;
-list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 ul.menu {
@@ -283,6 +278,35 @@ ul.menu a:hover {
     color: #fff;
 }
 
+ul.search {
+    text-align: center;
+}
+
+ul.search li {
+    position: relative;
+    display: inline-block;
+    border-right: 0.5px solid #ccc;
+    width: 40px;
+    text-align: center;
+}
+
+ul.search a {
+    background-color: #bcbcbc;
+    color: white;
+    display: block;
+    padding: 5px 0px;
+    text-decoration: none;
+}
+
+ul.search a:hover {
+    background-color: #e28648;
+    color: #fff;
+}
+
+#first-search {
+    background-color: #e28648;
+    color: #fff;
+}
 
 .head-img {
     background-image: url(https://unsplash.it/g/2000/1000);
@@ -298,6 +322,11 @@ ul.menu a:hover {
     padding-top: 50px;
 }
 
+.text {
+    color: #232323;
+    font-size: 16px;
+}
+
 input {
     display: inline-block;
     padding: 0;
@@ -307,23 +336,18 @@ input {
     width: 260px;
 }
 
-.right {
-    padding: 0 10px;
-}
-
 .about {
     background-color: white;
 }
 
 .img1 {
-    padding-top:40px;
+    text-align: center;
 }
 
 #img1 {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px dashed #afafaf;
+    padding: 20px;
+    border: 0.5px dashed #afafaf;
+    width: 100%;
 }
 
 footer {

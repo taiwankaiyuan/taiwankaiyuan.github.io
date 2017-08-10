@@ -8,86 +8,206 @@ body {
     margin: 0;
 }
 
-nav{
-    width: 950px;
+.thumbnail img {
+    max-width: 100%;
+    display: block;
     margin: 0 auto;
+}
+
+.row {
+    border: 2px solid red;
+}
+
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+[class^=col-] {
+    float: left;
+    width: 100%;
+    padding: 15px;
 }
 
 .container {
-    width: 950px;
     margin: 0 auto;
-    overflow: auto;
 }
 
-header {
-    background-image: url(http://placekitten.com/g/2000/300);
-    background-repeat: no-repeat;
-    height: 300;
-    color: white;
-    padding-top: 100px;
-}
-
-.left {
-    float: right;
-    padding: 10px;
-    width: calc(100% / 6 * 4)
-}
-
-.right {
-    float: right;
-    padding: 10px;
-    width: calc(100% / 6 * 2)
-}
-
-.box{
-    float:left;
-    width: calc(100% / 4)
-}
-
-footer {
-    background: #000;
-    color: white;
-    text-align: center;
-    height: 200px;
-}
-
-.author {
-    margin: 0 auto;
-    text-align: center;
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.author img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-.author h3 {
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-}
-
-.author p {
-    text-align: left;
-}
-
-@media screen and ( max-width:600px) {
-    .container{
+@media screen and (max-width:768px) {
+    .container {
         width: 100%;
     }
-    .footer {
-        width: 100%;
+    .col-xs-1 {
+        width: calc(100% * 1 / 12);
     }
-    .right {
-        width: 100%;
+    .col-xs-2 {
+        width: calc(100% * 2 / 12);
     }
-    .left {
-        width: 100%;
+    .col-xs-3 {
+        width: calc(100% * 3 / 12);
     }
+    .col-xs-4 {
+        width: calc(100% * 4 / 12);
+    }
+    .col-xs-5 {
+        width: calc(100% * 5 / 12);
+    }
+    .col-xs-6 {
+        width: calc(100% * 6 / 12);
+    }
+    .col-xs-7 {
+        width: calc(100% * 7 / 12);
+    }
+    .col-xs-8 {
+        width: calc(100% * 8 / 12);
+    }
+    .col-xs-9 {
+        width: calc(100% * 9 / 12);
+    }
+    .col-xs-10 {
+        width: calc(100% * 10 / 12);
+    }
+    .col-xs-11 {
+        width: calc(100% * 11 / 12);
+    }
+    .col-xs-12 {
+        width: calc(100% * 12 / 12);
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992) {
+    .container {
+        width: 750px;
+    }
+    .col-sm-1 {
+        width: calc(100% * 1 / 12);
+    }
+    .col-sm-2 {
+        width: calc(100% * 2 / 12);
+    }
+    .col-sm-3 {
+        width: calc(100% * 3 / 12);
+    }
+    .col-sm-4 {
+        width: calc(100% * 4 / 12);
+    }
+    .col-sm-5 {
+        width: calc(100% * 5 / 12);
+    }
+    .col-sm-6 {
+        width: calc(100% * 6 / 12);
+    }
+    .col-sm-7 {
+        width: calc(100% * 7 / 12);
+    }
+    .col-sm-8 {
+        width: calc(100% * 8 / 12);
+    }
+    .col-sm-9 {
+        width: calc(100% * 9 / 12);
+    }
+    .col-sm-10 {
+        width: calc(100% * 10 / 12);
+    }
+    .col-sm-11 {
+        width: calc(100% * 11 / 12);
+    }
+    .col-sm-12 {
+        width: calc(100% * 12 / 12);
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .container {
+        width: 970px;
+    }
+    .col-md-1 {
+        width: calc(100% * 1 / 12);
+    }
+    .col-md-2 {
+        width: calc(100% * 2 / 12);
+    }
+    .col-md-3 {
+        width: calc(100% * 3 / 12);
+    }
+    .col-md-4 {
+        width: calc(100% * 4 / 12);
+    }
+    .col-md-5 {
+        width: calc(100% * 5 / 12);
+    }
+    .col-md-6 {
+        width: calc(100% * 6 / 12);
+    }
+    .col-md-7 {
+        width: calc(100% * 7 / 12);
+    }
+    .col-md-8 {
+        width: calc(100% * 8 / 12);
+    }
+    .col-md-9 {
+        width: calc(100% * 9 / 12);
+    }
+    .col-md-10 {
+        width: calc(100% * 10 / 12);
+    }
+    .col-md-11 {
+        width: calc(100% * 11 / 12);
+    }
+    .col-md-12 {
+        width: calc(100% * 12 / 12);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+    .col-lg-1 {
+        width: calc(100% * 1 / 12);
+    }
+    .col-lg-2 {
+        width: calc(100% * 2 / 12);
+    }
+    .col-lg-3 {
+        width: calc(100% * 3 / 12);
+    }
+    .col-lg-4 {
+        width: calc(100% * 4 / 12);
+    }
+    .col-lg-5 {
+        width: calc(100% * 5 / 12);
+    }
+    .col-lg-6 {
+        width: calc(100% * 6 / 12);
+    }
+    .col-lg-7 {
+        width: calc(100% * 7 / 12);
+    }
+    .col-lg-8 {
+        width: calc(100% * 8 / 12);
+    }
+    .col-lg-9 {
+        width: calc(100% * 9 / 12);
+    }
+    .col-lg-10 {
+        width: calc(100% * 10 / 12);
+    }
+    .col-lg-11 {
+        width: calc(100% * 11 / 12);
+    }
+    .col-lg-12 {
+        width: calc(100% * 12 / 12);
+    }
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    border: 5px solid blue;
 }
 
 ul { /* 取消ul預設內縮及樣式 */
@@ -167,33 +287,71 @@ ul.dropdown-menu li:hover > ul {
     display: block;
 }
 
-table {
+.tophead-img {
+    background-image: url(http://placekitten.com/g/2000/300);
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
+    padding-top: 200px;
+}
+/*
+.left {
+    float: right;
+    padding: 10px;
+    width: calc(100% / 6 * 4)
+}
+
+.right {
+    float: right;
+    padding: 10px;
+    width: calc(100% / 6 * 2)
+}
+
+.box{
+    float:left;
+    width: calc(100% / 4)
+}
+
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    height: 200px;
+}
+
+.author {
+    margin: 0 auto;
+    text-align: center;
     border: 1px solid #000;
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-th, td {
-    border: 1px solid #000;
+.author img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
-nav.tophead {
-    position: fixed;
-    width: 30%;
-    top: 0;
-    right:0;
+.author h3 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }
 
-nav.tophead ul{
+.author p {
+    text-align: left;
+} */
+
+/*
+nav.container ul{
     margin: 0;
     list-style-type: none;
 }
 
-nav.tophead li{
+nav.container li{
     background: #b2b2b2;
     color: #000;
-    border-radius: 10px;
     margin: 5px;
     padding: 1px;
     text-align: center;
@@ -201,10 +359,10 @@ nav.tophead li{
     float: left;
 }
 
-nav.tophead li:hover {
+nav.container li:hover {
     background: white;
 }
 
-nav.tophead a {
+nav.container a {
     text-decoration: none;
-}
+} */
